@@ -4,15 +4,113 @@
 @tailwind components;
 @tailwind utilities;
 
-.bg-image {
-    background-image: url('../images/Datingstars-bg.webp');
+/* .bg-image {
+    background-image: url('../images/Datingstars-bg.webp') !important;
     background-size: cover;
     background-repeat: no-repeat;
+} */
+.star-bg-1 {
+    position: relative;
 }
 
+.star-bg-1::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: #F7B103;
+    width: 300px;
+    height: 400px;
+    opacity: 50%;
+    filter: blur(170px);
+    border-radius: 50%;
+    /* transform: translate(-50%, -50%); */
+    right: -10%;
+    top: -10%;
+}
+
+.star-bg-2 {
+    position: relative;
+}
+
+.star-bg-2::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: #F7B103;
+    width: 300px;
+    height: 400px;
+    opacity: 50%;
+    filter: blur(170px);
+    border-radius: 50%;
+    /* transform: translate(-50%, -50%); */
+    left: -10%;
+    top: -10%;
+}
+
+.star-bg-3 {
+    position: relative;
+}
+
+.star-bg-3::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: #F7B103;
+    width: 300px;
+    height: 400px;
+    opacity: 50%;
+    filter: blur(170px);
+    border-radius: 50%;
+    /* transform: translate(-50%, -50%); */
+    right: -10%;
+    top: -20%;
+}
+
+.star-bg-4 {
+    position: relative;
+}
+
+.star-bg-4::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: #F7B103;
+    width: 250px;
+    height: 400px;
+    opacity: 50%;
+    filter: blur(170px);
+    border-radius: 50%;
+    /* transform: translate(-50%, -50%); */
+    left: -5%;
+    top: -5%;
+}
+
+.star-bg-5 {
+    position: relative !important;
+}
+
+.star-bg-5::before {
+    content: "" !important;
+    position: absolute !important;
+    z-index: -1;
+    background: #F7B103;
+    width: 250px;
+    height: 400px;
+    opacity: 50%;
+    filter: blur(170px);
+    border-radius: 50%;
+    /* transform: translate(-50%, -50%); */
+    right: 0%;
+    bottom: -30%;
+}
+
+.layer-image{
+    bottom: -6% !important;
+    left: -5%;
+}
 .sec-2 .slick-list .slick-track {
     display: flex !important;
-    gap: 24px !important;
+    gap: 20px !important;
 }
 
 .sec-2 .slick-prev:before,
@@ -54,7 +152,7 @@ textarea {
 }
 
 .slider-2-image {
-        background-image: url('../images/slider-2-image.webp');
+    background-image: url('../images/slider-2-image.webp');
     background-repeat: no-repeat;
     background-size: cover;
     width: 364px;
@@ -63,7 +161,7 @@ textarea {
 }
 
 .slider-3-image {
-        background-image: url('../images/slider-3-image.webp');
+    background-image: url('../images/slider-3-image.webp');
     background-repeat: no-repeat;
     background-size: cover;
     width: 364px;
@@ -74,4 +172,8 @@ textarea {
 .sec-4 .slick-list .slick-track {
     display: flex !important;
     gap: 24px !important;
+}
+
+.pointer{
+    pointer-events: none;
 }
